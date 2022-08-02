@@ -1,0 +1,8 @@
+<div *ngIf="studentValues" id="output">
+  <p class="student" *ngIf="currentStudent">
+    {{ currentStudent.adjective }} {{ currentStudent.race }}
+    {{ currentStudent.campus }} from {{ currentStudent.location }} who
+    {{ currentStudent.backstory }}
+  </p>
+  <button mat-button (click)="newStudent()">Next student please</button>
+</div>
