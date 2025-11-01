@@ -1,0 +1,8 @@
+<div *ngIf="commonerValues" id="output">
+  <p class="commoner" *ngIf="currentcommoner">
+    {{ currentcommoner.adjective }} {{ currentcommoner.race }}
+    {{ currentcommoner.profession }} from {{ currentcommoner.location }} who
+    {{ currentcommoner.backstory }}
+  </p>
+  <button mat-button (click)="new()">Next commoner please</button>
+</div>
