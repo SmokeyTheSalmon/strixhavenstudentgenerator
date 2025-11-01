@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "WhoTheFuckIsThisStrixhavenStudent:build:production"
+              "buildTarget": "WhoTheFuckIsThisStrixhavenStudent:build:production"
             },
             "development": {
-              "browserTarget": "WhoTheFuckIsThisStrixhavenStudent:build:development"
+              "buildTarget": "WhoTheFuckIsThisStrixhavenStudent:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "WhoTheFuckIsThisStrixhavenStudent:build"
+            "buildTarget": "WhoTheFuckIsThisStrixhavenStudent:build"
           }
         },
         "test": {
@@ -109,5 +109,7 @@
       }
     }
   },
-  "defaultProject": "WhoTheFuckIsThisStrixhavenStudent"
+  "cli": {
+    "analytics": false
+  }
 }

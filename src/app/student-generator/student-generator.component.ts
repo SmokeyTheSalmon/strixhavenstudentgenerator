@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Student, StudentValues } from './model/student';
+import { Student, StudentValues } from '../model/student';
 
 @Component({
   selector: 'app-student-generator',
@@ -14,7 +14,7 @@ export class StudentGeneratorComponent implements OnInit {
   constructor(private readonly client: HttpClient) {}
 
   ngOnInit(): void {
-    this.client.get('./assets/values.json').subscribe(
+    this.client.get('./assets/values_student.json').subscribe(
       (values: any) => (this.studentValues = values),
       null,
       () => this.newStudent()
